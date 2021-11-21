@@ -108,3 +108,25 @@ h3 {
     font-size: 1.4rem;
   }
 }
+
+/* LIST COMPONENT */
+.list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.8rem;
+}
+.list_inline .list--item {
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+.list_tick .list--item {
+  background: url(/assets/images/check\ 1.png) no-repeat right center;
+  padding-right: 3rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .list_tick .list--item{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
