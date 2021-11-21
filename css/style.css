@@ -1,4 +1,4 @@
-/* resets */
+/* RESETS */
 *,
 *::after *::before {
   margin: 0;
@@ -6,7 +6,7 @@
   box-sizing: border-box;
   list-style: none;
 }
-/* root */
+/* ROOT */
 :root {
   --primary-color: #ff5722;
   --bg-color: #e5e5e5;
@@ -21,7 +21,7 @@
 
 
 
-/* typography */
+/* TYPOGRAPHY */
 html {
   font-size: 62.5%;
 }
@@ -86,4 +86,27 @@ h3 {
   .btn-block{
     font-size: 2rem;
   }
+}
+
+/* BADGES */
+.badge{
+  border-radius: 32px;
+  font-size: 1.2rem;
+  padding: .5rem 1.3rem;
+  text-transform: uppercase;
+}
+.badge--primary{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: 2px solid var(--primary-color);
+}
+.badge--secondary{
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+@media  screen and (min-width:1024px) {
+  .badge{
+    font-size: 1.4rem;
+  }  
 }
