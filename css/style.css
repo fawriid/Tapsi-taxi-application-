@@ -17,6 +17,10 @@
   --body-color: #333333;
   --white-color: #fff;
 }
+/* project is mobile first design */
+
+
+
 /* typography */
 html {
   font-size: 62.5%;
@@ -48,4 +52,38 @@ h3 {
     h2,h3{
         font-size: 3.5rem;
     }
+}
+
+
+/* BUTTONS */
+.btn{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 2rem 2.5rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  text-align: center;
+}
+.btn--primary{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.btn--secondary{
+  background-color: var(--secondary-dark);
+  color: var(--white-color);
+}
+.btn-block{
+  width: 100%;
+  font-size: 1.6rem;
+}
+@media screen and (min-width:1024px) {
+  .btn{
+    text-decoration-style: 1.6rem;
+  }
+  .btn-block{
+    font-size: 2rem;
+  }
 }
