@@ -10,6 +10,7 @@
 /* ROOT */
 :root {
   --primary-color: #ff5722;
+  --primary-color-light: #ff7a50;
   --bg-color: #e5e5e5;
   --nav-color: #f8f8f8;
   --secondary-light: #fff6f2;
@@ -140,6 +141,7 @@ h3 {
 }
 .plan {
   max-width: 500px;
+  font-size: 1.8rem;
 }
 .card {
   border-radius: 20px;
@@ -151,11 +153,34 @@ h3 {
 .card__body {
   padding: 3rem 2.5rem;
 }
-.card__header{
+.card__header {
   background-color: var(--secondary-dark);
+  color: var(--white-color);
 }
-.card__body{
+
+.card__body {
   background-color: var(--secondary-light);
+}
+.plan__intro {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.plan__price {
+  font-size: 3rem;
+}
+.plan__billing-cycle {
+  font-size: 1.4rem;
+}
+.plan__description {
+  margin-top: 2rem;
+  display: block;
+}
+.card--primary .card__header {
+  background-color: var(--primary-color-light);
+}
+.block-plan {
+  padding: 2rem;
 }
 @media screen and (min-width: 1024px) {
   .block-plan {
