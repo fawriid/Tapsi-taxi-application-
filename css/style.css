@@ -55,6 +55,16 @@ h3 {
   }
 }
 
+/* CONTAINER */
+.container {
+  width: 95%;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+
 /* BUTTONS */
 .btn {
   border: none;
@@ -137,17 +147,16 @@ h3 {
 .block-plan {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-  width: 90%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10rem 8rem;
   margin: 5rem auto;
-  transform: scale(.95);
+  transform: scale(0.95);
 }
 .plan {
   font-size: 1.8rem;
   transition: all 150ms linear;
 }
-.plan:hover{
+.plan:hover {
   transform: scale(1.05);
 }
 .card {
@@ -185,21 +194,21 @@ h3 {
 .block-plan {
   padding: 2rem;
 }
-.plan .btn{
+.plan .btn {
   font-size: 1.8rem;
   margin-top: 10rem;
 }
-.plan__popular{
+.plan__popular {
   transform: scale(1.1);
 }
-.plan__popular:hover{
+.plan__popular:hover {
   transform: scale(1.15);
 }
 @media screen and (min-width: 1024px) {
   .block-plan {
     grid-template-columns: repeat(3, 1fr);
   }
-  .plan .btn{
+  .plan .btn {
     font-size: 2rem;
   }
 }
