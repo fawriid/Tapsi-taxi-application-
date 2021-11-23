@@ -28,6 +28,7 @@ html {
 body {
   color: var(--body-color);
   font-size: 1.4rem;
+  line-height: 1.7;
 }
 h1,
 h2,
@@ -41,6 +42,7 @@ h1 {
 h2,
 h3 {
   font-size: 2rem;
+  margin-bottom: 1.7rem;
 }
 @media screen and (min-width: 1024px) {
   body {
@@ -58,6 +60,7 @@ h3 {
 /* CONTAINER */
 .container {
   width: 95%;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1024px) {
   .container {
@@ -210,5 +213,47 @@ h3 {
   }
   .plan .btn {
     font-size: 2rem;
+  }
+}
+
+/* FEATURE */
+.feature {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 9rem;
+}
+.feature .btn {
+  padding: 1.5rem 3rem;
+}
+.feature__text {
+  margin-bottom: 3rem;
+}
+.feature__image {
+  text-align: center;
+}
+.feature__image > img {
+  width: 70%;
+}
+
+@media screen and (min-width: 1024px) {
+  .feature {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7rem;
+    margin-bottom: 12rem;
+  }
+  .feature__image > img {
+    width: 100%;
+  }
+  .feature__detail {
+    order: 1;
+  }
+  .feature__image {
+    order: 2;
+  }
+  .feature:nth-child(3) .feature__image {
+    order: 1;
+  }
+  .feature__detail {
+    align-self: center;
   }
 }
