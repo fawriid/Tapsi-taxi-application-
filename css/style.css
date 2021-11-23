@@ -257,3 +257,34 @@ h3 {
     align-self: center;
   }
 }
+
+/* CONTACT US */
+.contact-us {
+  display: grid;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .contact-us{
+    grid-template-areas: 
+    "title title"
+    "address form"
+    "map form"
+    "icons form";
+    grid-template-columns: 70fr 30fr;
+  }
+  .contact-us__title{
+    grid-area: title;
+  }
+  .contact-us__form{
+    grid-area: form;
+  }
+  .contact-us__address{
+    grid-area: address;
+  }
+  .contact-us__map{
+    grid-area: map;
+  }
+  .contact-us__icons{
+    grid-area: icons;
+  }
+}
