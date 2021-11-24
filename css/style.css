@@ -329,3 +329,40 @@ h3 {
   }
 }
 
+
+
+/* contact-us SOCIAL MEDIA */
+.contact-social{
+  width: 2em;
+  height: 2em;
+}
+.contact-social--container{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f6f6f6; */
+  /* border-radius: 100%; */
+}
+.contact-us__social{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.social__holder{
+ display: flex;
+ align-items: center;
+ margin: 0 1rem;
+}
+.social__holder > span{
+  margin: .5rem;
+}
+@media screen and (min-width:1024px) {
+  .contact-us__social{
+   flex-direction: row-reverse;
+   justify-content: flex-start;
+   align-items: center;
+  }
+}
