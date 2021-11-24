@@ -263,6 +263,19 @@ h3 {
   display: grid;
   text-align: center;
 }
+.contact-icon{
+  width: 1.8em;
+  height: 1.8em;
+}
+.contact-icon--container{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 100%;
+}
 @media screen and (min-width: 1024px) {
   .contact-us{
     grid-template-areas: 
@@ -288,3 +301,5 @@ h3 {
     grid-area: icons;
   }
 }
+
+
