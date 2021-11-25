@@ -49,11 +49,11 @@ h3 {
     font-size: 1.8rem;
   }
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   h2,
   h3 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -262,41 +262,53 @@ h3 {
 .contact-us {
   display: grid;
   text-align: center;
+  font-family: "iranyekan";
 }
 
 @media screen and (min-width: 1024px) {
-  .contact-us{
-    grid-template-areas: 
-    "title title"
-    "icon form"
-    "map form"
-    "social form";
+  .contact-us {
+    grid-template-areas:
+      "title title"
+      "icon form"
+      "map form"
+      "social form";
     grid-template-columns: 70fr 30fr;
   }
-  .contact-us__title{
+  .contact-us__title {
     grid-area: title;
   }
-  .contact-us__form{
+  .contact-us__form {
     grid-area: form;
   }
-  .contact-us__icon{
+  .contact-us__icon {
     grid-area: icon;
   }
-  .contact-us__map{
+  .contact-us__map {
     grid-area: map;
   }
-  .contact-us__social{
+  .contact-us__social {
     grid-area: social;
   }
 }
 
+/* contact-us TITLE */
+.contact-us__title {
+  margin: 3rem 0 5rem 0;
+}
+.contact-us__title h1 {
+  font-size: 3rem;
+}
+.contact-us__title h3 {
+  font-size: 2.2rem;
+}
+
 /* contact-us ICON */
 
-.contact-icon{
+.contact-icon {
   width: 1.8em;
   height: 1.8em;
 }
-.contact-icon--container{
+.contact-icon--container {
   width: 60px;
   height: 60px;
   display: flex;
@@ -305,38 +317,37 @@ h3 {
   background-color: #f6f6f6;
   border-radius: 100%;
 }
-.contact-us__icon{
+.contact-us__icon {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-left: 3rem;
 }
-.icon__holder{
- display: flex;
- align-items: center;
+.icon__holder {
+  display: flex;
+  align-items: center;
 }
-.icon__holder > span{
-  margin: .5rem;
+.icon__holder > span {
+  margin: 0.5rem;
 }
-@media screen and (min-width:1024px) {
-  .contact-us__icon{
-   flex-direction: row-reverse;
-   justify-content: space-between;
-   align-items: flex-start;
+@media screen and (min-width: 1024px) {
+  .contact-us__icon {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
   }
-  .icon__holder{
+  .icon__holder {
     flex-direction: column-reverse;
     width: 30%;
   }
 }
 
-
-
 /* contact-us SOCIAL MEDIA */
-.contact-social{
+.contact-social {
   width: 2em;
   height: 2em;
 }
-.contact-social--container{
+.contact-social--container {
   width: 60px;
   height: 60px;
   display: flex;
@@ -345,24 +356,95 @@ h3 {
   /* background-color: #f6f6f6; */
   /* border-radius: 100%; */
 }
-.contact-us__social{
+.contact-us__social {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
+  margin-left: 3rem;
 }
-.social__holder{
- display: flex;
- align-items: center;
- margin: 0 1rem;
+.social__holder {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
 }
-.social__holder > span{
-  margin: .5rem;
+.social__holder > span {
+  margin: 0.5rem;
 }
-@media screen and (min-width:1024px) {
-  .contact-us__social{
-   flex-direction: row-reverse;
-   justify-content: flex-start;
-   align-items: center;
+@media screen and (min-width: 1024px) {
+  .contact-us__social {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+/* contact-us MAP */
+.contact-us__map {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .contact-us__map {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 3rem 0;
+    text-align: left;
+  }
+  .contact-us__map img {
+    margin-left: 5rem;
+  }
+}
+
+/* contact-us FORM */
+.contact-us__form {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin-left: 3rem;
+  margin-top: 4rem;
+}
+.contact-us__form h3 {
+  margin: 4.2rem;
+}
+.contact__form--wrapper {
+  padding: 5.2rem;
+  padding-top: 0;
+  width: 100%;
+  height: 100%;
+}
+.contact__form--wrapper form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  height: 80%;
+}
+input {
+  display: block;
+  outline: none;
+  background: #f5f5f5;
+  border: 1px solid #e8e8e8;
+  font-size: 1.4rem;
+  padding: 1rem 1.5rem;
+  font-family: "iranyekan";
+  border-radius: 20px;
+}
+textarea {
+  outline: none;
+  resize: none;
+  padding: 1rem 2rem;
+  border: 1px solid #e8e8e8;
+  background: #f5f5f5;
+  font-size: 1.4rem;
+  border-radius: 10px;
+}
+.contact__form--wrapper input:focus,
+.contact__form--wrapper textarea:focus {
+  border-color: var(--primary-color);
+}
+@media screen and (min-width: 1024px) {
+  .contact-us__form {
+    margin-top: 0;
   }
 }
