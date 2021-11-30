@@ -250,6 +250,9 @@ h3 {
   .feature__image {
     order: 2;
   }
+  .feature:nth-child(1) .feature__image{
+    order: 1;
+  }
   .feature:nth-child(3) .feature__image {
     order: 1;
   }
@@ -263,6 +266,7 @@ h3 {
   display: grid;
   text-align: center;
   font-family: "iranyekan";
+  margin-top: 10rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -456,6 +460,9 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10rem;
+  padding-top: 7rem;
+  padding-bottom: 0;
 }
 .main-footer .footer {
   display: flex;
@@ -648,6 +655,7 @@ textarea {
 .hero-section {
   width: 100%;
   height: 478px;
+  position: relative;
 }
 .banner-bg {
   background: url(/assets/images/banner-mobile.png);
@@ -659,7 +667,7 @@ textarea {
 }
 .hero-wrapper {
   position: absolute;
-  top: 0;
+  top: 6rem;
   right: 0;
   display: flex;
   justify-content: center;
@@ -730,9 +738,9 @@ textarea {
 .mockup {
   display: none;
   position: absolute;
-  left: 10%;
-  bottom: -10%;
-  height: 100%;
+  left: 8%;
+  bottom: -80%;
+  height: 165%;
 }
 @media screen and (min-width: 768px) {
   .banner-bg {
@@ -743,8 +751,8 @@ textarea {
   }
   .hero-wrapper {
     justify-content: flex-start;
-    top: 5rem;
-    right: 5rem;
+    top: 4rem;
+    right: 6rem;
     margin-right: 0;
   }
   .hero-intro {
@@ -841,6 +849,9 @@ textarea {
 }
 .block {
   padding: 4rem 2rem;
+}
+.services__title{
+  margin-top: 20rem;
 }
 @media screen and (min-width: 1024px) {
   .services__tabs .tab > p {
