@@ -7,14 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Tapsi</title>
 </head>
 
 <body>
 
-    <header class="main--nav">
+    <header class="main--nav" data-aos="fade-down"  data-aos-delay=20"
+    data-aos-duration="1300">
         <nav class="header__nav container">
-            <a href="#" class="tapsi--logo"><svg xmlns="http://www.w3.org/2000/svg" width="102" height="22"
+            <a href="#" class="tapsi--logo"><svg xmlns="http://www.w3.org/1300/svg" width="102" height="22"
                     viewBox="0 0 102 22">
                     <g fill-rule="evenodd">
                         <path fill="#000"
@@ -40,7 +42,8 @@
         </nav>
     </header>
 
-    <section class="hero-section">
+    <section class="hero-section" data-aos="fade-down"  data-aos-delay=20"
+    data-aos-duration="1300">
         <div class="banner-bg"></div>
         <div class="hero-wrapper ">
             <div class="hero-intro ">
@@ -93,7 +96,8 @@
         <img class="mockup" src="/assets/images/mockup-phone.png" alt="">
     </section>
 
-    <section class="services container block">
+    <section class="services container block" data-aos="fade-up"  data-aos-delay=20"
+    data-aos-duration="1300">
         <h2 class="services__title">سرویس های تپسی</h2>
         <div class="services__tabs">
             <a class="tab active" data-tab-target="nav-classic-tab">
@@ -267,7 +271,8 @@
         </div>
     </section>
 
-    <section class="feature-section-container">
+    <section class="feature-section-container" data-aos="fade-down"  data-aos-delay=20"
+    data-aos-duration="1300">
         <!-- 1 -->
         <section class="feature container">
             <div class="feature__image">
@@ -315,7 +320,8 @@
         </section>
     </section>
 
-    <section class="block-plan container">
+    <section class="block-plan container" data-aos="fade-up"  data-aos-delay=20"
+    data-aos-duration="1300">
         <!-- 1 -->
         <div class="plan">
             <div class="card">
@@ -388,7 +394,8 @@
         </div>
     </section>
 
-    <section class="contact-us container">
+    <section class="contact-us container" data-aos="fade-down"  data-aos-delay=20"
+    data-aos-duration="1300">
         <div class="contact-us__title" ">
                 <h1>ارتباط با ما</h1>
                 <h3>شما میتوانید نظرات و انتقادات خود را برای ما بفرستید</h3>
@@ -462,7 +469,8 @@
         </div>
     </section>
 
-    <footer class="main-footer">
+    <footer class="main-footer" data-aos="fade-up"  data-aos-delay=20"
+    data-aos-duration="1300">
         <div class="container footer">
             <div class="footer__item footer__intro">
                 <h1>تپسی</h1>
@@ -535,6 +543,10 @@
     </footer>
 
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
