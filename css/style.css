@@ -267,6 +267,7 @@ h3 {
   text-align: center;
   font-family: "iranyekan";
   margin-top: 10rem;
+  justify-content: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -411,10 +412,11 @@ h3 {
   margin: 4.2rem;
 }
 .contact__form--wrapper {
-  padding: 5.2rem;
+  padding: 1rem;
   padding-top: 0;
-  width: 100%;
-  height: 100%;
+  margin: 0 auto;
+  width: 80%;
+  height: 90%;
 }
 .contact__form--wrapper form {
   display: flex;
