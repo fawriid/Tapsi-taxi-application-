@@ -250,7 +250,7 @@ h3 {
   .feature__image {
     order: 2;
   }
-  .feature:nth-child(1) .feature__image{
+  .feature:nth-child(1) .feature__image {
     order: 1;
   }
   .feature:nth-child(3) .feature__image {
@@ -852,7 +852,7 @@ textarea {
 .block {
   padding: 4rem 2rem;
 }
-.services__title{
+.services__title {
   margin-top: 20rem;
 }
 @media screen and (min-width: 1024px) {
@@ -887,4 +887,107 @@ textarea {
 }
 .block-heading {
   margin-top: 6rem;
+}
+
+/* TRAVELL */
+.travell {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-family: "vazir";
+}
+.travell__slides {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+.travell__slides::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #ccc;
+  border-radius: 20px;
+}
+.travell__slides::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 20px;
+}
+.travell__slides::-webkit-scrollbar:hover{
+  cursor: pointer;
+}
+.travell__slides::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color:var(--primary-color-light);
+}
+.travell--slide {
+  max-width: 400px;
+  min-width: 250px;
+  margin: 0 1rem;
+  margin-bottom: 2rem;
+  flex: 1 1;
+  cursor: pointer;
+}
+.slide__img {
+  height: 250px;
+}
+.travell--slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.slide__detail {
+  background-color: #fff;
+  box-shadow: 1px 1px 15px 2px #ccc;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  transform: translateY(-30px);
+  width: 80%;
+  margin: 0 auto;
+}
+.slide--header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.slide--header p {
+  margin-right: 1rem;
+  font-size: 1.7rem;
+}
+.slide--header span {
+  padding: 0.1rem 2rem;
+  font-size: 1.4rem;
+}
+.slide__detail .slide--title {
+  font-weight: 700;
+  padding-right: 0.4rem;
+  margin-top: 0.5rem;
+  font-size: 2rem;
+}
+.travell-svg {
+  width: 20px;
+  height: 20px;
+  margin: 0 0.2rem;
+  transition: all 150ms linear;
+}
+.travell-svg:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+.travell-svg__container {
+  margin-top: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.travell-svg__container > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.travell-svg__container > div span {
+  margin: 0 2px;
+  color: #aaa;
+  margin-left: 0.6rem;
 }
