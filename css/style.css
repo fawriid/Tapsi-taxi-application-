@@ -227,6 +227,7 @@ h3 {
 }
 .feature__text {
   margin-bottom: 3rem;
+  text-align: justify;
 }
 .feature__image {
   text-align: center;
