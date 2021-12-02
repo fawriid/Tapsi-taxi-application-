@@ -207,6 +207,13 @@ h3 {
 .plan__popular:hover {
   transform: scale(1.15);
 }
+
+@media (max-width: 756px) {
+  .card {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 1024px) {
   .block-plan {
     grid-template-columns: repeat(3, 1fr);
@@ -651,7 +658,7 @@ textarea {
 }
 .header__nav.nav__expanded .bar-two {
   opacity: 0;
-  transform: translate(-30px);
+  transform: translate(30px);
 }
 .header__nav.nav__expanded .bar-three {
   transform: rotate(-45deg) translate(11px);
